@@ -51,5 +51,5 @@ Zomato-Website/
 │── script.js
 └── images/
  
-👩‍💻 Aythor 
+👩‍💻 Author 
 Arju Singh GitHub: https://github.com/arjusingh16
