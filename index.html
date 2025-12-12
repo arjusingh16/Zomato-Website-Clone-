@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Zomato</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .collections {
+            width: 200px;
+            height: 280px;
+        }
+        @media (max-width: 1366px) {
+            .phone {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 970px) {
+            .collections {
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+        }
+        }
+        @media (max-width: 865px) {
+            .row-1-res {
+                width: 20vw;
+            }
+            .row-2-res {
+                width: 20vw;
+            }
+        }
+        @media (max-width: 847px) {
+            .row-1-res {
+                display: flex;
+                flex-direction: column;
+            }
+            .row-1-1-res {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body class="p-0 m-0 border-0 bd-example m-0 overflow-auto" >
+
+    <div class="main"
+        style="background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png'); background-repeat: no-repeat; background-size: 100% 97%;">
+<!--         <div class="cursor" style="height: 10px; width: 10px; border-radius: 50%; background-color: red;"></div> -->
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 rounded m-3">
+                <div class="container-fluid ">
+                    <a href="index.html"><img class="rounded-5" width="80rem" src="https://th.bing.com/th/id/OIP.JiV-a6Ex60aYdK5vYc3J_wHaFD?w=660&h=450&rs=1&pid=ImgDetMain" alt=""></a>
+                    <a class="navbar-brand ms-5" href="getapp.html">Get the App</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 58%; ">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="investor.html">Investor Relations</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="https://www.zomato.com/partner-with-us/new/">Add Resturant</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="login.html">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="signup.html">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header">
+            <h1 class="text-light" style="text-align: center; padding-top: 70px; font-size: 60px; font-weight: 900;">
+                Zomato</h1>
+            <h3 class="text-light" style="text-align: center; font-size: 30px;">Discover the best food & drinks in
+                Bengaluru</h3>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <form class="d-flex w-50" role="search" style="margin-left: 25%;">
+                <input class="form-control me-2" type="search" placeholder="Search for resturant, cuisine or a dish"
+                    aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+        </div><br><br><br><br><br><br>
+    </div>
+
+
+    <div class="container d-flex gap-4 justify-content-center" style="height:250px;">
+        <div class="card " style="width: 18rem;">
+            <a href="orderOnline.html" style="text-decoration: none; color:black">
+                <img style="width: 100%; height: 40%;"
+                    src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Order Online</h5>
+                    <p class="card-text">Stay home and order to your doorstep</p>
+                </div>
+            </a>
+        </div>
+        <div class="card " style="width: 18rem;">
+            <a href="Dinning.html" style="text-decoration: none; color:black">
+                <img style="width: 100%; height: 40%;"
+                    src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dining</h5>
+                    <p class="card-text">View the city's favourite dining venues</p>
+                </div>
+            </a>
+        </div>
+        <!-- <div class="card " style="width: 18rem;">
+            <img style="width: 100%; height: 40%;"
+                src="https://b.zmtcdn.com/data/o2_assets/371de657644f1b5818fcb5d83387c8c91722851940.png?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Live Events</h5>
+                <p class="card-text">Discover India's best events & concerts</p>
+            </div>
+        </div> -->
+    </div>
+    <br><br><br>
+    <div style=" background: rgba(104, 215, 215, 0.3);"><br><br>
+        <div class="container-fluid" style="padding-left: 12%;">
+            <h1 class="h1" style="padding-left: 20%;">Collections</h1>
+            <span class="d-flex gap-5">
+                <p class="fs-6" style="padding-left: 20%;">Explore curated lists of top restaurants,
+                    cafes, pubs, and bars in Bengaluru, based on trends</p>
+                <!-- <p><a style="text-decoration: none; color: red;" href="">All collections in Bengaluru</a><img width="22px"
+                        src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p> -->
+            </span>
+    
+            <br>
+            <div class="d-flex gap-4 row-sm-6 coll" style="padding-left: 16%;">
+                <div>
+                    <a href="topTrending.html" style="text-decoration: none; color:black">
+                        <img class="collections rounded-3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbvanqx0Mu1rOe97TvksbJL7tiUMWtRX7IOURYForSxT5dCAyJRe8uF9bspzSaLHKLiRE&usqp=CAU"
+                            class="card-img-top col-sm-6" alt="...">
+                        <div class=" text-light " style="margin-top: -4rem;">
+                            <h4 class="text-center">Top Trending Spots</h4>
+                            <p class="m-0">25 Places <img width="22px"
+                                    src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="rooftop.html" style="text-decoration: none; color:black">
+                        <img class="collections rounded-3"
+                            src="https://b.zmtcdn.com/data/pictures/1/18930081/70d0e6077959d67657fed21671e3e6be.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                            class="card-img-top col-sm-6" alt="...">
+                        <div class=" text-light " style="margin-top: -4rem;">
+                            <h4 class="text-center">Best Rooftop Places</h4>
+                            <p class="m-0">43 Places <img width="22px"
+                                    src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="newPlace.html" style="text-decoration: none; color:black">
+                        <img class="collections rounded-3"
+                            src="https://b.zmtcdn.com/data/collections/6922d49fb675d0490edb652abf5ca45f_1727171289.png"
+                            class="card-img-top col-sm-6" alt="...">
+                        <div class=" text-light " style="margin-top: -4rem;">
+                            <h4 class="text-center">Newly Places</h4>
+                            <p class="m-0">29 Places <img width="22px"
+                                    src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div>
+                    <img style="height: 280px; width: 200px;" class="collections rounded-3"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpBU0zwoXAjtvaLs7O6Hk2m225rFEpMVqz2MlIfbDksCLtGuwfVjwXe0W1wW0F9u-KDE&usqp=CAU"
+                        class="card-img-top col-sm-6" alt="...">
+                    <div class=" text-light " style="margin-top: -4rem;">
+                        <h4 class="text-center">It's a Date</h4>
+                        <p class="m-0">24 Places <img width="22px"
+                                src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                    </div>
+                </div> -->
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    <br>
+   <div class="section3" style=" background: rgba(221, 213, 245, 0.3);">
+    <div class="popular" style="margin-left: 15%; "><br>
+        <h3 class="fs-2 fw-100" style="margin-left: 19%;">Popular localities in and around Bengaluru</h3><br>
+        <div style="margin-left: 20%;">
+            <div class=" d-flex gap-3">
+
+                <a href="indiranagar.html"
+                    style="text-decoration: none; color:black">
+                    <div class="row-1-res popular-items  card " style="width: 12vw;">
+                        <h5>Indiranagar</h5>
+                        <p>612 Places</p>
+                    </div>
+                </a>
+
+                <a href="marathahalli.html"
+                    style="text-decoration: none; color:black">
+                    <div class="row-1-1-res popular-items  card col" style="width: 12vw;">
+                        <h5>Marathahalli</h5>
+                        <p>1054 Places</p>
+                    </div>
+                </a>
+                <a href="whitefield.html"
+                    style="text-decoration: none; color:black">
+                    <div class="row-1-1-1-res popular-items  card col" style="width: 12vw;">
+                        <h5>Whitefield</h5>
+                        <p>1088 Places</p>
+                    </div>
+                </a>
+                
+            </div><br><br>
+            <div class="d-flex gap-3">
+                <a href="koramangala.html"
+                    style="text-decoration: none; color:black">
+                    <div class="row-2-res popular-items  card" style="width: 12vw;">
+                        <h5>Koramangala 5th B</h5>
+                        <p>320 Places</p>
+                    </div>
+                </a>
+                <a href="hsr.html" 
+                style="text-decoration: none; color:black">
+                    <div class="row-2-2-res popular-items  card" style="width: 12vw;">
+                        <h5>HSR</h5>
+                        <p>1014 Places</p>
+                    </div>
+                </a>
+                <a href="jayanagar.html"
+                    style="text-decoration: none; color:black">
+                    <div class="row-2-2-2-res popular-items  card " style="width: 12vw;">
+                        <h5>Jayanagar</h5>
+                        <p>650 Places</p>
+                    </div>
+                </a>
+            </div><br>
+        </div>
+        <!-- <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>JP Nagar</h5>
+                <p>767 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Sarjapur Road</h5>
+                <p>822 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Lavelle road</h5>
+                <p>104 Places</p>
+            </div>
+        </div><br> -->
+        <!-- <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Malleshwaram</h5>
+                <p>382 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>BTM</h5>
+                <p>1237 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>MG Road</h5>
+                <p>89 Places</p>
+            </div>
+        </div><br> -->
+        <!-- <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Koramangala 4th B</h5>
+                <p>612 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Kalyan Nagar</h5>
+                <p>461 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Electronic City</h5>
+                <p>1368 Places</p>
+            </div> 
+        </div><br> -->
+        <!-- <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Bannerghatta Road</h5>
+                <p>805 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Bellandur</h5>
+                <p>454 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Koramangala 7th B</h5>
+                <p>612 Places</p>
+            </div>
+        </div><br>
+        <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>New BEL Road</h5>
+                <p>509 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Residency Road</h5>
+                <p>70 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Koramangaka 6th B</h5>
+                <p>612 Places</p>
+            </div>
+        </div><br>
+        <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Church Street</h5>
+                <p>84 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Brigade Road</h5>
+                <p>181 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Old Airport Road</h5>
+                <p>171 Places</p>
+            </div>
+        </div><br>
+        <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Banashankari</h5>
+                <p>573 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Basavnagudi</h5>
+                <p>391 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Rajajinagar</h5>
+                <p>627 Places</p>
+            </div>
+        </div><br>
+        <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Brookefield</h5>
+                <p>433 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Kammanahalli</h5>
+                <p>370 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Majastic</h5>
+                <p>612 Places</p>
+            </div>
+        </div><br>
+        <div class="row w-100 d-flex gap-3">
+            <div class="popular-items  card col-3">
+                <h5>Indiranagar</h5>
+                <p>612 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Indiranagar</h5>
+                <p>612 Places</p>
+            </div>
+            <div class="popular-items  card col-3">
+                <h5>Indiranagar</h5>
+                <p>612 Places</p>
+            </div>
+        </div> -->
+        <br><br>
+    </div>
+   </div>
+    <br> 
+    <div>
+        <div class="d-flex gap-4 row-sm-6" style="margin-left: 25%;">
+            <div>
+                <a href="cuisines1.html" style="text-decoration: none; color:black">
+                    <img class="collections rounded-3"
+                        src="https://img.freepik.com/premium-photo/beautiful-cake-which-is-located-natural-landscape-mountains-that-look-like-beautiful-cakes_758374-1140.jpg"
+                        class="card-img-top col-sm-6" alt="...">
+                    <div class=" text-light " style="margin-top: -4rem;">
+                        <h4 class="text-center">Popular Cuisiness</h4>
+                        <p class="m-0">25 Places <img width="22px"
+                                src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="cuisines2.html" style="text-decoration: none; color:black">
+                    <img class="collections rounded-3"
+                        src="https://th.bing.com/th/id/OIP.671at6UHxrgcZYq_lHmGOgAAAA?rs=1&pid=ImgDetMain"
+                        class="card-img-top col-sm-6" alt="...">
+                    <div class=" text-light " style="margin-top: -4rem;">
+                        <h4 class="text-center">Popular Restaurant</h4>
+                        <p class="m-0">43 Places <img width="22px"
+                                src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="cuisiness3.html" style="text-decoration: none; color:black">
+                    <img class="collections rounded-3"
+                        src="https://thumbs.dreamstime.com/z/landscape-view-modern-luxury-restaurant-image-271397859.jpg"
+                        class="card-img-top col-sm-6" alt="...">
+                    <div class=" text-light " style="margin-top: -4rem;">
+                        <h4 class="text-center">Top Restaurants</h4>
+                        <p class="m-0">29 Places <img width="22px"
+                                src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                    </div>
+                </a>
+            </div>
+            <!-- <div>
+                <img style="height: 280px; width: 200px;" class="collections rounded-3"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpBU0zwoXAjtvaLs7O6Hk2m225rFEpMVqz2MlIfbDksCLtGuwfVjwXe0W1wW0F9u-KDE&usqp=CAU"
+                    class="card-img-top col-sm-6" alt="...">
+                <div class=" text-light " style="margin-top: -4rem;">
+                    <h4 class="text-center">It's a Date</h4>
+                    <p class="m-0">24 Places <img width="22px"
+                            src="https://img.icons8.com/?size=100&id=70817&format=png&color=000000" alt=""></p>
+                </div>
+            </div> -->
+        </div>
+    </div><br><br>
+    <div class="d-flex phone" style="padding-left: 25%; background-color: rgb(247, 246, 244);">
+        <div class="col-4">
+            <img style="width: 400px;"
+                src="https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png" alt="">
+        </div>
+        <div class="col-8">
+            <h2 class="fs-1" style="padding-top: 30px;">Get the Zomato app</h2>
+            <br>
+            <p>We will send you a link, open it on your phone to download the app</p><br>
+            <div class="d-flex gap-5">
+                <p class="fs-5"><input type="radio" name="contact"><label for="">Email</label></p>
+                <p class="fs-5"><input type="radio" name="contact"><label for="">Phone</label></p>
+            </div>
+            <div class="textbox">
+                <input class="rounded-2 w-50" style="height: 40px;" type="text" placeholder="Enter Email/Phone">
+                <input class="bg-danger text-light rounded-2 w-10" style="height: 40px;" type="button"
+                    value="Search">
+            </div><br>
+            <p>Download app from</p>
+            <span class="download">
+                <img style="width: 140px;"
+                    src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+                <img style="width: 140px;"
+                    src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+            </span>
+        </div>
+    </div>
+    <br><br>
+    <!-- <div class="more" style="margin-left: 20%;">
+        <h2>Explore options near me</h2><br>
+        <select class="form-select form-select-lg mb-3 w-75" aria-label="Large select example">
+            <option >Popular Cuisines Near Me</option>
+            <option><a href="cuisines1.html">Bakery near me</a></option>
+            <a href="cuisines2.html"><option>Beverages near me</option></a>
+        </select>
+        <select class="form-select form-select-lg mb-3 w-75" aria-label="Large select example">
+            <option selected>Popular Restaurant Types Near me</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+        </select>
+        <select class="form-select form-select-lg mb-3 w-75" aria-label="Large select example">
+            <option selected>Top Restaurant Chains</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+        </select>
+        <select class="form-select form-select-lg mb-3 w-75" aria-label="Large select example">
+            <option selected>Cities We Deliver To</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+        </select>
+
+    </div><br><br><br> -->
+
+
+    <footer style="background-color: rgb(250, 248, 245);">
+        <div class="footer w-75" style="margin-left: 16%;"><br><br>
+            <span class="row">
+                <h1>Zomato</h1><br>
+                <!-- <div class="d-grid gap-2 d-md-flex justify-content-end" style="margin-top: -35px;">
+            <button class="btn btn-primary me-md-2" type="button">INDIA</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div> -->
+            </span>
+            <br><br>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th style="background-color: rgb(250, 248, 245);" scope="">ABOUT ZOMATO</th>
+                        <th style="background-color: rgb(250, 248, 245);" scope="">ZOMAVERSE</th>
+                        <th style="background-color: rgb(250, 248, 245);" scope="">FOR RESTAURANT</th>
+                        <th style="background-color: rgb(250, 248, 245);" scope="">LEARN MORE</th>
+                        <th style="background-color: rgb(250, 248, 245);" scope="">SOCIAL LINKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Who We Are</td>
+                        <td style="background-color: rgb(250, 248, 245);">Zomata</td>
+                        <td style="background-color: rgb(250, 248, 245);">Partner With Us</td>
+                        <td style="background-color: rgb(250, 248, 245);">Privacy</td>
+                        <td style="background-color: rgb(250, 248, 245);">
+                            <a href="https://www.linkedin.com/company/zomato/?originalSubdomain=in"><img
+                                    class="rounded-5"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII=" /></a>
+                            <a href="https://www.instagram.com/zomato/"><img class="rounded-5"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoxJREFUSEvl1kvozmkUwPHPXxaKGixcEkLTUGhk4X6NzcitWFiZmCkLCzaIsXFJuWXBgkgpq5mNy2ws3K8lZhrkWpSQSxILG/I7+v319uv3/N73nVf9lWfzvj2/c873Oec5l6dNB622DuL65sF98SM61YnQB9zH03qRrPK4D7ZhFnrUM1T4/hp/Y1XqECnw3MzDwxm4a5PAovg7LMLx4ocycO9M+A5+aBHarv4KPyF+v6wy8AEsaQH6AJ0xsMbGfvxeBQ6FuJ9u/xP8D0bluv9heP7/LbrjY7vdoscD8KgONDzairsI+bGYj0jGWvB1/FxjqxdepMCjcbUCvBo7EGVTuyIfYn8p7uE9RhRkwvubKfAUnE6Al2MPhmYGFmJiLncOf+YJuRMrE/oRmSsp8EycKFG8kIMiO3djRkEmdOJgcU3/5ocrmhmPS82CF+MQ1mUZuynh0VpswUb8USIzARebBUdYw+voRr8kwEcRjWdBHvqi2GTEtXxexayehpMlhqfjVN6BooWWrSNZVs+rAE/FmRQ4PgaguJZhb5ata/JwloEj46PMNiPCXlyTstw43yw4sjGycnDWCHZhdsFqeLsiS7CXuI1+JeBxuJwCx6nOJkLZXk6D8nCOyeXC2F94iH3F1lhjK3rEtRR4ZF4OCbYI5/ba1pcL1jaQlG40lBspcEymZynNfD8mV5RN1Gy0zKjPOVkOxGOhakX4n6TAsf84cUd17FZ+foOeVUMitNdnT5wNrVBKdGPU/la7XzaPYzTeyt9YX4Mf3g5p5CEQsP7ZXI0SaZ+trRwgHhUHiwaqHntd8mn0awOvy6LdGPjHENOqtDwbeVdHpg9r0uW4qudVOo2Am2Q2Jv79gT8BaMhxHzndaXwAAAAASUVORK5CYII=" /></a>
+                            <a href="https://x.com/zomato/status/1663275283816824840"><img class="rounded-5"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfpJREFUSEvt1kuoT1EUx/HPjYEkz0J5RUlKDDDxyiOSMhDJQJEyUEhRBmJgQCkJkamJt4wkE4WBxESGTChJmUh5F2fVvv/uPd1z9/73v/lP7q7dGey1f9+91l57rdOjS6OnS1zD4P8W+aEI9ThcxjLMwA+cw2l8S55MSd9PvZ7VwaNxBXvwp8D9aXiK2QPYfsB1LMBYLO9rUwdvrQzv4B62F8DvY1PmgG+wMUXjcZPHB3AhLT7Hzmq+bRBeghcFUXlXRXEqtuBBE3gVWqfCT5zARXyvQQ7ifAH4c3Lg4WChHoWvGFkTjCS5i2vVyV/hI47jZAH4THXoo3W7gbJ6X8rSwTS/IObMAvAxnMqBd2NhlVyLsLZAtMQkNK/mwBvQ7y5KlDM28b6f5cBxt5HFs4YAGBJxHRPwNweO9ZXpHU8aAvhN7BhIp6lkRkU6jL0Y08EBVteeZ0uqCbwf27C4A/BLLG06dBN4Pl5jRAfersOjdsFhvxk3EI2j3XEWRwbblGuLkxFhX4MVhfQnWI9fnYCjnUWSHUqtLceOCO3KQUOkr8cTU8WKZj4vzahe8Q5zI95rlMZLOcPe9XqoI5Ojrs4tFPiNWykqrb+Lkr1NdxyeRoOPP4vpmIPx1X1Hi4v5PhWZ26k6lbD62eSSq23B0g3D4NJIdWzXtVD/A1e4TB/sCCruAAAAAElFTkSuQmCC" /></a>
+                            <a href="https://www.youtube.com/user/zomatodotcom"><img class="rounded-5"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvt1jtoFUEUxvFfUBCCooWNpBGDdtrYiYWNEiLRMmUQUUFQBLVRfGBeRVJEbCzEImWqCKIopAi2goiKiGhlIRZ2aqGie2AX1sFw517u5qbIaZYdznx/zjdnHn16FH094loHr5rza8rqjRjBAXwrLdiO3djUwpLveI34RvzBSzzEr/rctOJ9eICdXfb8I47hTaWbgp/hYJehldwTDP0PPIBPDUEr2R34HD/1ig8X6/q0YfAhLKfgE7ifAY4e2IW9GblpyigWUvBFzGaIXcckTmIK0fG5cQr3UvDNov1vZCgEeLzM24ZbOFuMbciYex53UnBUG1W3ijq4yt2D2/WuXUHkcuVqvbkmcLUVFdcQufWIw2UOwy3mXykOoelOra6Dt5RWn8u0+kLpzD/b6RJmMiuOpjpdrnU7zTVW7Ij5tOIzuJsBXsRgh9spluJxCj6OEG0y4i54lYKjM981SUU/fqTg+H+O/Q3BH+FopZ3eTgFdwtYuwz+Ud/zblcAxvhlH8LV8DMSZHLdKO/EF74tz4SdelA+B33WBNfX0aaeyjnPXK+7YunYn9szqv6QmPx+V5GUqAAAAAElFTkSuQmCC" /></a>
+                            <a href="https://www.facebook.com/zomato/"><img class="rounded-5"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAn1JREFUSEvFll1oz1EYxz+LRsu83WxygaSIXLmQJuXCXNokFyhyRUSyxM3ukJfalEutlLU0K5m4cSNlYrUScuO1vCTZGmmLOF+dv87/OOd3zv/nYk/tYr//c57P85znOc/z1DFFUjdFXGoFTwPWAouBBdbpd8BrYAj4mRtILngZcBxoA+ZGjH8BrgGngBcpB1LgBuA0sB9QtDnyAzgHdAKTsQNF4EXATWBlDi2g8xDYAigV/0gMvAK4B8wvCa0cE3SdrYEqUyFwsy0URZySj8Bd4CXwHZgObAWWOwefWviYaywE7gO2p4jGuPT2AaOe7kFzUxe8bxeBA0VgefosA6ooVkeezyFT+V2eDRWZnuD7ync/4svArgywrnPA05Nh/bUDitqXMyYdx0LgeuATMDsDrJt57uj129wWHdXbXhoCbwTuZEClIufGra4cnsg899dh96p3Az2ZBhqBr1Z3luNE6rje9XUpueAOQHnIkbLgw0C3Dz4KnI1QXwFLcjwCrgLbIrpinPfBqmZVdUhqAT8GVkXs7AB6fbDG3f3IgaqKLIhcg+SbmVAzIjprgGEfrHan0aZi8UXd6U9urJx0Jo+q+oT9rtwfiUBlQ73/lw/W/znvUXpliusKsLPilN+5dBUaZykpA1ben8TA+n7LTKfNCXKtYN1kVaXHxqKGwLwCeC3gD4Dme9UUiy0CG8xSd9usPTMj8Fyw2qpa8SPfTtHq0wIMAnMC8BywBs4ms/6MhJxPLXsLbSfS+uJKCnzDrDt7zHj8HEtXClx5cuuBvabBtAJNkef01qbnEvAg9SxywL4N9ew3zvahbiVngtvk/0Sccr7U72UiLgXyD/0GGLB0H1VMfAgAAAAASUVORK5CYII=" /></a>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Blog</td>
+                        <td style="background-color: rgb(250, 248, 245);">Blinkit</td>
+                        <td style="background-color: rgb(250, 248, 245);">Apps For You</td>
+                        <td style="background-color: rgb(250, 248, 245);">Security</td>
+                        <td style="background-color: rgb(250, 248, 245);">
+                            <span class="download">
+                                <img style="width: 140px;"
+                                    src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                                    alt="">
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Work With Us</td>
+                        <td style="background-color: rgb(250, 248, 245);">Feeding India</td>
+                        <td style="background-color: rgb(250, 248, 245);"></td>
+                        <td style="background-color: rgb(250, 248, 245);">Terms</td>
+                        <td rowspan="2" style="background-color: rgb(250, 248, 245);">
+                            <img style="width: 140px;"
+                                src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                                alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Investor Relations</td>
+                        <td style="background-color: rgb(250, 248, 245);">Hyperpure</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Report Fraud</td>
+                        <td style="background-color: rgb(250, 248, 245);">Zomato Livr</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Press Kit</td>
+                        <td style="background-color: rgb(250, 248, 245);">Zomaland</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(250, 248, 245);">Contact Us</td>
+                        <td style="background-color: rgb(250, 248, 245);">Weather Union</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <p class="fs-6">Copyright @Sumant Adky By continuing past this page, you agree to our Terms of Service,
+                Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective
+                owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
